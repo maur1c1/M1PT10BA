@@ -1,0 +1,1 @@
+(()=>{"use strict";let[e,l,o]=[1,2,3];console.log("PT-11B")})();

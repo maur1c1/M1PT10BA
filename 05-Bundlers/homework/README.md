@@ -286,7 +286,7 @@ Webpack toma nuestros archivos JavaScript y produce un solo, archivo JavaScript 
 
 Usualmente vas a ver los términos "compilador" y "compilación" combinados juntos con los términos "transpilador" y "transpilación". La diferencia es puramente semántica. Un "compilador" típicamente "compila" un lenguaje de alto nivel a un lenguaje de menor nivel (no humanamente legible). Por ejemplo usas un compilador C++ para compilar código fuente C++ a código de maquina.
 
-Por el otro lado, un "transpilador" típicamente "transpila" un lenguaje de alto nivel, a otro lenguaje de alto nivel. Por ejemplo, el transpilador node-sass toma código fuente SCSS y lo transpila a CSS. De la misma forma, Webpack transpila nuestro Javascript a... Javascript distinto!
+Por el otro lado, un "transpilador" típicamente "transpila" un lenguaje de alto nivel, a otro lenguaje de alto nivel. Por ejemplo, el transpilador node-sass toma código fuente SCSS y lo transpila a CSS. De la misma forma, Webpack transpila nuestro Javascript a... Javasnpcript distinto!
 
 ### Instalar
 
