@@ -9,10 +9,10 @@ export default function Bienvenido() {
   // el código de tu componente acá
   return (
     <div>
-      <h1>Hello World!</h1>
-      <h3>My name is {studentName}</h3>
+      <h1>We are first app in React!</h1>
+      <h3>{studentName}</h3>
       <ul>
-        {techSkills.map(elem=> <li>{elem}</li>)}
+        {techSkills.map((elem, index)=> <li key={index}>{elem}</li>)}
       </ul>
       <Botones alerts ={alerts}/>
 

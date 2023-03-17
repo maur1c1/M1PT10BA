@@ -50,7 +50,7 @@ Los dos primeros test pasarán sin que hagas nada, simplemente están para que t
 
 🔹 Dentro de la carpeta `01 - Exercises`, vas a encontrar la siguiente estructura:
 
--  Una carpeta llamada **mocks**
+n-  Una carpeta llamada **mocks**
 -  Una carpeta llamada **img**
 -  Una carpeta llamada **public**
 -  Una carpeta llamada `src` (Es la carpeta en donde trabajarás)
@@ -59,7 +59,7 @@ Los dos primeros test pasarán sin que hagas nada, simplemente están para que t
 -  Y el archivo `README.md` que ahora mismo estás leyendo. 🧐
 
 Además:
-
+`
 🔹 Dentro de la carpeta `src` encontrarás el esqueleto del proyecto React, estructurado de la siguiente manera:
 
 -  Una carpeta llamada **assets**
@@ -125,7 +125,7 @@ Ya sabes cómo funciona y se conectan los archivos module.css a los componentes,
 
 1. En el componente `Botones.jsx`, importa `styled` desde "styled-components"`
 2. Encontrarás una constante llamada `DivButtons`, la cual debe contener mínimamente los siguientes estilos para el div:
-   -  `display: flex;`
+npm    -  `display: flex;`
    -  `flex-direction: row;`
    -  `justify-content: space-around;`
    -  `align-items: center;`
