@@ -2,7 +2,7 @@
 
 ## **Duración estimada 🕒**
 
-2 horas
+x minutos
 
 <br />
 
@@ -52,7 +52,7 @@ Para comenzar a trabajar, primero tendremos que crear un estado global en el que
 
 3. Crea un caso con el nombre "_FILTER_". Haz una copia de tu estado "**_allCharacters_**" mediante destructuring. Filtra aquellos personajes que tengan el mismo género que recibes por payload. Retorna tu estado global, pero que la propiedad **_myFavorites_** sea igual al filtrado que haz hecho.
 
-4. Crea un caso con el nombre "_ORDER_". Haz una copia de tu estado "**_allCharacters_**" mediante destructuring. Utiliza el método **sort** de arreglos para ordenar tus personajes en base al número de su ID. Si el _payload_ es "**Ascendente**", entonces de menor a mayor. Si el _payload_ es "**Descendiente**, entonces de mayor a menor. Retorna tu estado global, pero que la propiedad **_myFavorites_** sea igual al ordenamiento que haz hecho.
+4. Crea un caso con el nombre "_ORDER_". Haz una copia de tu estado "**_allCharacters_**" mediante destructuring. Utiliza el método **sort** de arreglos para ordenar tus personajes en base al número de su ID. Si el _payload_ es "**Ascendiente**", entonces de menor a mayor. Si el _payload_ es "**Descendiente**, entonces de mayor a menor. Retorna tu estado global, pero que la propiedad **_myFavorites_** sea igual al ordenamiento que haz hecho.
 
 > **NOTA:** investiga en la web sobre cómo funciona el método sort.
 

@@ -11,7 +11,7 @@
 
 ## **Duración total estimada 🕒**
 
-4 horas
+x minutos
 
 <br />
 

@@ -4,7 +4,7 @@ import CopyData from './components/CopyData/CopyData';
 import InfoEnviada from './components/InfoEnviada/InfoEnviada';
 import './home.css';
 
-export default function Home() {
+export const Home = ()=> {
    return (
       <div className='homeBg'>
          <ContactUs />

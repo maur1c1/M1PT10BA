@@ -2,7 +2,7 @@
 
 ## **Duración estimada 🕒**
 
-2 horas
+x minutos
 
 <br />
 
@@ -34,11 +34,10 @@ Lee atentamente este **README** y realiza cada uno de los ejercicios.
 npm install
 ```
 
--  Listo!! Ya puedes correr los test y levantar el proyecto con los comandos:
+-  Listo!! Ya puedes correr los test:
 
 ```bash
 npm test
-npm start
 ```
 
 Si deseas correr por test, puedes utilizar:
@@ -47,13 +46,13 @@ Si deseas correr por test, puedes utilizar:
 npm run test:01
 ```
 
-🔹 Para visualizar la aplicación desde el navegador, debes abrir una segunda terminal y ejecutar el comando:
+🔹 Para poder correr la aplicación de forma local, sólo debes ejecutar el comando
 
 ```bash
 npm start
 ```
 
-Ingresando a <http://localhost:3000> desde el navegador, podrás ver en tiempo real el resultado de nuestro trabajo.
+-  Ingresando a <http://localhost:3000> desde el navegador, podremos ir viendo en tiempo real el resultado de nuestro trabajo.
 
 ---
 
