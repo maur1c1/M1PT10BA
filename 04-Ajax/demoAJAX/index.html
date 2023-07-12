@@ -8,16 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Nuestra primera página con AJAX</h1>
-    <button id="loaduser">Cargar Usuarios</button>
-    <h3>Lista de usuarios</h3>
-    <ul id="usersList">
-        <!-- queremos crear una li por cada ususario -->
+    <div>
+        <button>Traer todos los usuarios</button>
+        <button>Consultar los usuarios</button>
+        <input type="text">
 
-    </ul>
+    </div>
 
-    <script src="./script.js">
-        
+    <script>
+        $.get('https://jsonplaceholder.typicode.com/users', (response)=>{
+                console.log(response);
+        })
     </script>
 </body>
 </html>

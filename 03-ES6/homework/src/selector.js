@@ -1,5 +1,5 @@
 let traverseDomAndCollectElements = function(matchFunc, startEl = document.body) {
-  var resultSet = [];
+  let resultSet = [];
 
   // if (typeof startEl === "undefined") {
   //   startEl = document.body;
@@ -10,15 +10,15 @@ let traverseDomAndCollectElements = function(matchFunc, startEl = document.body)
 
   // TU CÓDIGO AQUÍ
   
-  if(matchFunc(startEl)) resultSet.push(startEl);
+   if(matchFunc(startEl)) resultSet.push(startEl);
 
-  for(let i=0; i<startEl.children.length; i++){
+      for(let i=0; i<startEl.children.length; i++){
 
-    let aux = traverseDomAndCollectElements(matchFunc,startEl.children[i]);
-    resultSet = [...resultSet, ...array];
+      let aux = traverseDomAndCollectElements(matchFunc,startEl.children[i]);
+      resultSet = [...resultSet, ...aux];
     
   }
-  return resultSet;
+   return resultSet;
 };
 
 //#--> id
@@ -129,7 +129,7 @@ if(selectorType === "id"){
 }else if(selectorType === "class"){
 
   matchFunction = (element) =>{ //<span class="hola buenos dias"></span>
-    let classes = element.classList; //['hola', 'buenos', 'dias']
+    let classes = element.classList; // ['hola', 'buenos', 'dias']
 
     return classes.contains(selector.slice(1)); //dias  con classList
 
@@ -144,7 +144,21 @@ if(selectorType === "id"){
 
 }else if(selectorType === "tag.class"){
 
+    matchFunction = (element) => {
+
+      const [tag, className] = selector.split('.') //['div', 'buenos']
+      // 'div', 'buenos'
+
+      // let match = matchFunctionMaker(tag)
+      // match(element)
+
+      return matchFunctionMaker(tag)(element) && matchFunctionMaker(`.${className}`)(element);
+
+    }
+
 }else if(selectorType === "tag"){
+
+    matchFunction = (element)=> element.tagName === selector.toUpperCase();
 
 }
 return matchFunction;
@@ -152,8 +166,8 @@ return matchFunction;
 };
 
 let $ = function(selector) {
-  var elements;
-  var selectorMatchFunc = matchFunctionMaker(selector);
+  let elements;
+  let selectorMatchFunc = matchFunctionMaker(selector);
   elements = traverseDomAndCollectElements(selectorMatchFunc);
   return elements;
 };
